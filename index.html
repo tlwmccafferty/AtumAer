@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AtumAer — Investor Microsite</title>
+  <meta name="description" content="AtumAer: programmable art in the sky. Investor-ready plan, technology, and roadmap." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="container">
+      <div class="logo"><img src="assets/img/logo.svg" alt="AtumAer logo"/><span class="tag">Colorado</span></div>
+      <div class="menu">
+        <a href="#plan">Plan</a>
+        <a href="#stack">Stack</a>
+        <a href="#timeline-sec">Timeline</a>
+        <a href="#financials">Financials</a>
+        <a href="#hardware">Hardware</a>
+        <a href="#downloads" class="btn ghost">Downloads</a>
+        <a href="#contact" class="btn primary">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Programmable art in the sky.</h1>
+      <p class="kicker">AtumAer pairs a production-grade stack (DSS + QuickStart + Timecode) with a standards-gated, mixed fleet to deliver reliable, breathtaking drone shows—then compounds that fieldcraft into training, rentals, autonomy R&amp;D, and personal flight.</p>
+      <p style="margin-top:1.1rem">
+        <a class="btn primary" href="#downloads">Open investor materials</a>
+        <a class="btn ghost" href="#stack">How this site was built</a>
+      </p>
+    </div>
+  </header>
+
+  <section class="section" id="plan">
+    <div class="container">
+      <h2>Executive Snapshot</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>What we do</h3>
+          <ul class="clean">
+            <li>Premium drone shows (100 → 1,000 units) with per‑drone pricing and premium attach (pyro, FPV, rush creative).</li>
+            <li>Education &amp; training cohorts; rentals; a software playground for interactive autonomy.</li>
+            <li>Roadmap to residencies, leagues, and a world‑record attempt via partners.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Operating moat</h3>
+          <p>Vendor‑agnostic acceptance gate (PX4 1.13.x, ≥20‑min endurance, ≥900‑lm LEDs, 10 m/s horizontal, dual‑band comms with ≥400 m / ≥1,200 m, vibration &lt; 0.04, remote sleep/wake or power, fast‑landing tolerance).</p>
+          <p class="tag">Reliability</p> <p class="tag">Scale</p>
+        </div>
+        <div class="card">
+          <h3>Colorado → Nation</h3>
+          <p>Start in Colorado (municipalities, festivals, stadiums), then expand to national residencies and global partnerships for mega‑shows.</p>
+          <div class="kpi"><span>Pricing anchor</span><b>$233 / drone</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="hardware">
+    <div class="container">
+      <h2>Mixed Fleet — Fit for Purpose</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Lumenier ARORA</h3>
+          <ul class="clean">
+            <li><b>25‑min</b> endurance; <b>360°</b> luminance</li>
+            <li><b>LEDs ~6× brighter</b>, true white</li>
+            <li>Weather‑resistant casing; <b>remote power</b> on/off</li>
+          </ul>
+          <small class="mono">Plan A (stadium‑grade brightness)</small>
+        </div>
+        <div class="card">
+          <h3>WG DR001</h3>
+          <ul class="clean">
+            <li><b>~2,400‑lm</b> RGBW output</li>
+            <li><b>25‑min</b> flight; u‑blox <b>F9P RTK</b></li>
+            <li>Integrated kill‑switch; <b>remote sleep/wake</b></li>
+          </ul>
+          <small class="mono">Cost‑efficient backbone</small>
+        </div>
+        <div class="card">
+          <h3>UVify IFO</h3>
+          <ul class="clean">
+            <li><b>12 m/s</b> wind resistance</li>
+            <li>Multi‑constellation GNSS with RTK</li>
+            <li>IFO‑P <b>pyro add‑on</b> (arm/disarm, continuity, 6 cues)</li>
+          </ul>
+          <small class="mono">High‑wind / record pedigree</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="timeline-sec">
+    <div class="container">
+      <h2>10‑Year Market Timeline</h2>
+      <div id="timeline" class="timeline"></div>
+    </div>
+  </section>
+
+  <section class="section" id="financials">
+    <div class="container">
+      <h2>Use of Funds (illustrative)</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <canvas id="uof" width="360" height="360" style="width:100%;max-width:360px;height:auto;display:block;margin:auto"></canvas>
+        </div>
+        <div class="card">
+          <h3>What the dollars buy</h3>
+          <ul class="clean">
+            <li><b>Fleet + Network + DSS</b> (quotes in hand for 1,000‑unit packages incl. QuickStart &amp; Timecode).</li>
+            <li><b>Facilities &amp; Grounds</b> (5–10 acres) + storefront fit‑out.</li>
+            <li><b>Working capital</b> for logistics, deposits, and spares; <b>marketing</b> for reels &amp; proposals.</li>
+          </ul>
+          <div class="kpi"><span>Payback (Yr‑1 target)</span><b>Inside 6–9 shows</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="stack">
+    <div class="container">
+      <h2>How this microsite is built</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Today’s MVP (static)</h3>
+          <p>This site is pure HTML/CSS/JS—no backend—so it can be hosted on GitHub Pages, Netlify, or Vercel in minutes. Interactive pieces (timeline &amp; donut) use tiny vanilla‑JS helpers.</p>
+          <p class="tag">Fast</p> <span class="tag">Brand‑accurate</span> <span class="tag">Low‑friction</span>
+        </div>
+        <div class="card">
+          <h3>Phase‑2 (recommended)</h3>
+          <ul class="clean">
+            <li><b>Next.js + MDX</b> for a polished marketing site with “interactive islands.”</li>
+            <li>Or a <b>Streamlit</b> app for a Python‑native, interactive plan browser and dashboard.</li>
+            <li>Both can reuse the same brand tokens and content JSON generated here.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" style="margin-top:1rem">
+        <h3>Quick start — host this in a repo</h3>
+        <pre class="code">$ git init
+$ git add .
+$ git commit -m "AtumAer investor microsite (MVP)"
+$ git branch -M main
+$ git remote add origin &lt;YOUR_GITHUB_REPO_URL&gt;
+$ git push -u origin main
+# Enable GitHub Pages → Deploy from branch: / (root)</pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="downloads">
+    <div class="container">
+      <h2>Downloads</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Core Documents</h3>
+          <ul class="clean">
+            <li><a href="downloads/AtumAer_BusinessPlan_DRAFT.docx">Business Plan (DRAFT).docx</a></li>
+            <li><a href="downloads/AtumAer_DroneWrx.docx">AtumAer DroneWrx.docx</a></li>
+            <li><a href="downloads/DocTemplate.docx">Doc Template (styles)</a></li>
+            <li><a href="downloads/AtumAer_PitchDeck_v2_WITH_NOTES.pptx">Pitch Deck (with speaker notes).pptx</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Quotes & Specs</h3>
+          <ul class="clean">
+            <li><a href="downloads/Quote_WG_1000.pdf">WG 1,000‑drone Quote (PDF)</a></li>
+            <li><a href="downloads/Quote_UVify_1000.pdf">UVify 1,000‑drone Quote (PDF)</a></li>
+            <li><a href="downloads/Perf_Gate.pdf">Performance Requirements (PDF)</a></li>
+            <li><a href="downloads/Spec_UVify_IFO.pdf">UVify IFO Brochure (PDF)</a></li>
+            <li><a href="downloads/Spec_Lumenier_ARORA.pdf">Lumenier ARORA Brochure (PDF)</a></li>
+            <li><a href="downloads/Spec_WG_DR001.pdf">WG DR001 Spec (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:info@atumaer.com">info@atumaer.com</a> &nbsp;|&nbsp; Location: Colorado</p>
+        <p>We can add a serverless form (Vercel/Netlify) or a calendaring link in Phase‑2.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 AtumAer LLC. Built with the AtumAer brand palette for a consistent investor experience.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
